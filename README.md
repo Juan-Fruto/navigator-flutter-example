@@ -6,7 +6,7 @@ An aplication wich you can login and validate the user input.
 
 1. Run the application in your android device
 
-2. Enter `admin` for login field and 'admin' for password field
+2. Enter `admin` for login field and `admin` for password field
 
 ## Expected results
 
