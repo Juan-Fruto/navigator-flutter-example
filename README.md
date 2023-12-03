@@ -1,4 +1,4 @@
-# 👾 login
+# 📱 login app
 
 An aplication wich you can login and validate the user input.
 
@@ -10,12 +10,13 @@ An aplication wich you can login and validate the user input.
 
 ## Expected results
 
-- Success login
-![success-login](https://github.com/Juan-Fruto/navigator-flutter-example/tree/master/img/results/success.jpg)
+- Success login:
+  <br><br>
+  <img src="https://github.com/Juan-Fruto/navigator-flutter-example/blob/master/img/results/success.jpg" height="500">
 
-- Success login
-![failed-login](https://github.com/Juan-Fruto/navigator-flutter-example/tree/master/img/results/failed.jpg)
-
+- Failed login:
+  <br><br>
+  <img src="https://github.com/Juan-Fruto/navigator-flutter-example/blob/master/img/results/failed.jpg" height="500">
 
 ## 📰 Further information
 
