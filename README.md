@@ -5,6 +5,8 @@ An aplication wich you can login and validate the user input.
 ## ✔️ Getting Started
 
 1. Run the application in your android device
+  <br><br>
+  <img src="https://github.com/Juan-Fruto/navigator-flutter-example/blob/master/img/views/home.jpg" height="500">
 
 2. Enter `admin` for login field and `admin` for password field
 
