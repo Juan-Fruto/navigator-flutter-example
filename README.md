@@ -8,7 +8,7 @@ An aplication wich you can login and validate the user input.
 
 2. Enter `admin` for login field and `admin` for password field
 
-## Expected results
+## 📈 Expected results
 
 - Success login:
   <br><br>
