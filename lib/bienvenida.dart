@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Bienvenida extends StatelessWidget {
-  const Bienvenida({Key? key, required String txtLogin, required String txtPassword}) : super(key: key);
+  final String txtLogin;
+  final String txtPassword;
+  const Bienvenida({Key? key, required String this.txtLogin, required String this.txtPassword}) : super(key: key);
   
-  get txtLogin => null;
-  
-  get txtPassword => null;
-
   @override
   Widget build(BuildContext context) {
     // Mostrar el AlertDialog al inicio de la construcción del widget
@@ -37,9 +35,20 @@ class Bienvenida extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           title: isValid ? const Text('¡Bienvenido!') : const Text('Error de validación'),
-          content: isValid
-              ? const Text('Bienvenido a la aplicaciòn.')
-              : Text(errors.join("\n")),
+          content: Row(
+            children: [
+              isValid
+              ? const Text('👋', style: TextStyle(fontSize: 30)) // Emoji como icono,
+              : const Icon(
+                Icons.error,
+                color: Colors.red,
+              ),
+              const SizedBox(width: 16),
+              isValid
+                  ? const Text('Bienvenido a la aplicaciòn.')
+                  : Text(errors.join("\n")),
+            ],
+          ),
           actions: [
             TextButton(
               onPressed: () {
@@ -60,20 +69,19 @@ class Bienvenida extends StatelessWidget {
   List<String> getErrors(){
     List<String> erros = [];
 
-    // if(txtLogin.length == 0 || txtLogin.isUndefinedOrNull()){
-    //   erros.add("The user has not been provided");
-    // }
-    // if(txtPassword.length == 0 || txtPassword.isUndefinedOrNull()){
-    //   erros.add("The user has not been provided");
-    // }
+    if(txtLogin.isEmpty){
+      erros.add("The user has not been provided");
+    }
+    if(txtPassword.isEmpty){
+      erros.add("The user has not been provided");
+    }
     if(txtLogin != "admin"){
       erros.add("Invalid user");
     }
     if(txtPassword != "admin"){
       erros.add("Invalid password");
     }
-
-    // return erros.length > 0 ? false : true;
+    
     return erros;
   }
 }

@@ -1,10 +1,23 @@
-# login
+# 👾 login
 
-A new Flutter project.
+An aplication wich you can login and validate the user input.
 
-## Getting Started
+## ✔️ Getting Started
 
-This project is a starting point for a Flutter application.
+1. Run the application in your android device
+
+2. Enter `admin` for login field and 'admin' for password field
+
+## Expected results
+
+- Success login
+![success-login](https://github.com/Juan-Fruto/navigator-flutter-example/tree/master/img/results/success.jpg)
+
+- Success login
+![failed-login](https://github.com/Juan-Fruto/navigator-flutter-example/tree/master/img/results/failed.jpg)
+
+
+## 📰 Further information
 
 A few resources to get you started if this is your first Flutter project:
 
